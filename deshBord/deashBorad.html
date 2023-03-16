@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Accout Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-700">
+    <header>
+          <h1 class="text-center font-bold text-5xl mt-20 text-red-100">My Account Dashboard Page</h1>
+    </header>
+    <main>
+         <section class="mt-10">
+               <div class=" grid grid-cols-3 mx-auto gap-4 w-2/4">
+                   <div class="bg-blue-600  p-6 rounded">
+                       <h3 class=" text-3xl font-semibold text-white mb-2">Deposit</h3>
+                       <h4  class="text-4xl font-semibold text-white">$<span id="deposit">00</span></h4>
+                   </div>
+                   <div class="bg-blue-600  p-6 rounded">
+                       <h3 class=" text-3xl font-semibold text-white mb-2">Withdraw</h3>
+                       <h4  class="text-4xl font-semibold text-white">$<span id="withdraw">00</span></h4>
+                   </div>
+                   <div class="bg-blue-600  p-6 rounded">
+                       <h3 class=" text-3xl font-semibold text-white mb-2">Balance</h3>
+                       <h4  class="text-4xl font-semibold text-white">$<span id="balance">1200</span></h4>
+                   </div>
+               </div>
+         </section>
+         <!--================diposit and withdraw input fild create==================-->
+         <section class="mt-5">
+                  <div class=" grid grid-cols-2 mx-auto gap-4 w-2/4">
+                       <div class="bg-blue-600  p-6 rounded">
+                        <h3 class=" text-3xl font-semibold text-white mb-2">Deposit Amount</h3>
+                           <input id="deposit-inputFild" class="p-3 px-8 mb-2 rounded text-3xl pl-4" type="text" placeholder="$00">
+                           <button id="deposit-button" class="bg-blue-500 text-white font-semibold p-2 px-10 text-2xl rounded">Deposit</button>
+                       </div>
+                       <div class="bg-blue-600  p-6 rounded">
+                        <h3 class=" text-3xl font-semibold text-white mb-2">Withdraw Amount</h3>
+                           <input id="withdraw-inputFild" class="p-3 px-8 mb-2 rounded text-3xl pl-4" type="text" placeholder="$00">
+                           <button id="withdraw-button" class="bg-blue-500 text-white font-semibold p-2 px-10 text-2xl rounded">Withdraw</button>
+                       </div>
+                  </div>
+         </section>
+    </main>
+    <!-- script src link============-->
+    <script src="banking.js"></script>
+</body>
+</html>
